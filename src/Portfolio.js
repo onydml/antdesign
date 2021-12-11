@@ -1,5 +1,5 @@
 import React from 'react'
-import { Layout, Menu,Typography,Avatar,Image,BackTop  } from 'antd';
+import { Layout, Menu,Typography,Avatar,Image,BackTop,Carousel  } from 'antd';
 import './Portfolio.css'
 const { Header, Content, Footer } = Layout;
 const { Title } = Typography;
@@ -12,6 +12,14 @@ const style = {
     color: '#fff',
     textAlign: 'center',
     fontSize: 14,
+  };
+  const contentStyle = {
+    height: '200px',
+    width:'500px',
+    color: '#fff',
+    lineHeight: '160px',
+    textAlign: 'center',
+    background: '#364d79',
   };
 
 const Portfolio = () => {
@@ -47,6 +55,20 @@ const Portfolio = () => {
                         <p>The quick brown fox<br />jumps over the lazy dog</p>
                     </div>
                 </div>
+                <Carousel autoplay>
+                    <div>
+                    <Image style={{contentStyle}} className="avatar1" src='https://joeschmoe.io/api/v1/random' />
+                    </div>
+                    <div>
+                    <h3 style={contentStyle}>2</h3>
+                    </div>
+                    <div>
+                    <h3 style={contentStyle}>3</h3>
+                    </div>
+                    <div>
+                    <h3 style={contentStyle}>4</h3>
+                    </div>
+                </Carousel>
                 <div className="Contact">
                     <div className="info-contact">
                         <h1>ONY DUANGMALA</h1>
