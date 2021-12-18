@@ -1,9 +1,0 @@
-@import '~antd/dist/antd.css';
-
-.personal{
-    display: flex;
-    flex-direction: row;
-}
-h1{
-    font-size: 50px;
-}

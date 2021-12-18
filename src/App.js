@@ -1,12 +1,21 @@
 import './App.css';
-import Portfolio from './Portfolio';
+import AppHeader from './components/comman/header';
+import AppHome from './components/views/home';
 
+import { Layout } from 'antd';
+import { Content } from 'antd/lib/layout/layout';
+const { Header } = Layout;
 
 function App() {
   return (
-    <div className="App">
-      <Portfolio/>
-    </div>
+      <Layout className="mainLayout">
+        <Header>
+          <AppHeader/>
+        </Header>
+        <Content>
+          <AppHome/>
+        </Content>
+      </Layout>
   );
 }
 
